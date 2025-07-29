@@ -1,0 +1,197 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 40px auto;             /* 上下 40px 距离，自动水平居中 */
+  padding: 40px;
+  background-color: #fff;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
+}
+
+
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  text-align: center;
+  color: #222;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  table-layout: fixed;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: center;
+  word-break: break-word;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+}
+
+/* 移除第一行（表头）上方边框 */
+/* table tr:first-child th {
+  border-top: none;
+} */
+
+/* 为特定行添加顶部粗边框 */
+tr.table-with-top-border {
+  border-top: 3px solid black;
+}
+
+tr.table-with-top-border th,
+tr.table-with-top-border td {
+  border-top: 3px solid black;
+}
+/* 移除最后一行下方边框 */
+/* table tr:last-child td {
+  border-bottom: none;
+} */
+
+
+audio {
+  width: 160px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #777;
+}
+/* 表格行鼠标悬停变色 */
+table tr:hover {
+  background-color: #f0f8ff; /* 你也可以换成 #eef 或 #f9f9f9 等浅色 */
+}
+
+.highlight_yellow {
+  background-color: yellow; /* 高亮背景色 */
+  color: black;             /* 字体颜色 */
+  padding: 3px 0; 
+}
+audio {
+  width: 100%;        /* 宽度填满容器 */
+  max-width: 300px;   /* 最大宽度限制 */
+  height: 40px;       /* 固定高度 */
+  margin: 10px 0;     /* 上下边距 */
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .comparison-table th {
+    /* background-color: #f8f9fa; */
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  .comparison-table td {
+    padding: 15px;
+    vertical-align: top;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .comparison-table tr:first-child {
+    border-top: 2px solid #212529;
+  }
+  
+  .model-grid {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    gap: 0;
+  }
+  
+  .model-grid > div {
+    padding: 12px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+  }
+  
+  .model-grid > div:last-child {
+    border-right: none;
+  }
+  
+  .model-grid > div.no-border-bottom {
+    border-bottom: none;
+  }
+  
+  audio {
+  width: 100%;
+  max-width: 300px;
+  display: block;      /* 新增 */
+  margin: 0 auto;      /* 新增 */
+}
+  
+  .text-content {
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  text-align: center;  /* 新增 */
+  margin-top: 15px;    /* 新增 */
+}
+
+  /* 新增这个类 */
+.audio-text-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
